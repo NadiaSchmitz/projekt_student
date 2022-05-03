@@ -31,7 +31,10 @@ public class StudentDatabase {
 	
 	// Methoden
 	public void printStudentsListe(Student[] students_list) {
-		System.out.printf(" %-20s %-15s", students_list);
+		for (int i = 0; i < students_list.length; i++) {
+			System.out.printf(" %-20s %-15s", students_list[i].getName(), students_list[i].getMatrikelnummer());
+			System.out.println();
+		}
 	}
 	
 	public void addStudent(String new_name) {

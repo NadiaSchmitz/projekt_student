@@ -119,9 +119,7 @@ public class Main {
 		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
 		
-		for (i = 0; i < my_database.getStudentsList().length; i++) {
-			my_database.getStudentsList()[i].printMe(my_database.getStudentsList()[i].getName(), my_database.getStudentsList()[i].getMatrikelnummer());
-		}
+		my_database.printStudentsListe(students_list);
 		
 		System.out.println();
 		
