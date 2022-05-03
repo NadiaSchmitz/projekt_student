@@ -11,9 +11,9 @@ public class Main {
 		mio.setName("Mio Johns");
 		mio.setMatrikelnummer(98);
 		
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
-		System.out.printf("%-15s %-10s", mio.getName(), mio.getMatrikelnummer());
+		System.out.printf("%-20s %-15s", mio.getName(), mio.getMatrikelnummer());
 		System.out.println();
 		System.out.println();
 		
@@ -23,9 +23,9 @@ public class Main {
 		
 		Student jo = new Student("Jo Klam", 12);
 		
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
-		System.out.printf("%-15s %-10s", jo.getName(), jo.getMatrikelnummer());
+		System.out.printf("%-20s %-15s", jo.getName(), jo.getMatrikelnummer());
 		System.out.println();
 		System.out.println();
 		
@@ -34,7 +34,7 @@ public class Main {
 		System.out.println("--------------------------");
 		
 		Student lin = new Student();
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
 		lin.printMe("Lin Kler", 65);
 		System.out.println();
@@ -46,7 +46,7 @@ public class Main {
 		Student[] list = new Student[40];
 		int i;
 		
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
 		
 		for (i = 0; i < list.length; i++) {
@@ -85,7 +85,7 @@ public class Main {
 		
 		// Databank ausgeben
 		System.out.println("Datenbank aus Klasse StudenDatabase");
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
 		
 		for (i = 0; i < my_database.getStudentsList().length; i++) {
@@ -99,7 +99,7 @@ public class Main {
 		my_database.addStudent("Michael");
 		
 		System.out.println("Datenbank aus Klasse StudenDatabase + neue Studenten");
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
 		
 		for (i = 0; i < my_database.getStudentsList().length; i++) {
@@ -116,7 +116,7 @@ public class Main {
 		System.out.println();
 		
 		System.out.println("Datenbank aus Klasse StudenDatabase + neue Studenten - gelöschte Studenten");
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.printf("%-20s %-15s", "Name", "Matrikelnummer");
 		System.out.println();
 		
 		for (i = 0; i < my_database.getStudentsList().length; i++) {
@@ -144,7 +144,7 @@ public class Main {
 		}
 		
 		System.out.println("Datenbank aus Klasse StudenDatabase + neue Studenten - gelöschte Studenten + Alter + Note");
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer", "Alter", "Note");
+		System.out.printf("%-20s %-15s %-15s %-15s", "Name", "Matrikelnummer", "Alter", "Note");
 		System.out.println();
 		
 		for (i = 0; i < my_database.getStudentsList().length; i++) {

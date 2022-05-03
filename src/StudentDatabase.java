@@ -31,7 +31,7 @@ public class StudentDatabase {
 	
 	// Methoden
 	public void printStudentsListe(Student[] students_list) {
-		System.out.printf(" %-15s %-10s", students_list);
+		System.out.printf(" %-20s %-15s", students_list);
 	}
 	
 	public void addStudent(String new_name) {
