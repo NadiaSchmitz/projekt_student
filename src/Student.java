@@ -68,7 +68,7 @@ public class Student {
 	}
 	
 	public void printMe8() {
-		System.out.printf("%-15s %-10s %-10s %-10s", name, matrikelnummer, age, mark);
+		System.out.printf("%-15s %-15s %-15s %-15s", name, matrikelnummer, age, mark);
 		System.out.println();
 	}
 	

@@ -94,7 +94,7 @@ public class StudentDatabase {
 			}
 		} 
 		avg = sum / number;
-		System.out.println(avg);
+		System.out.println("Durchschnittlicher Alter: " + avg);
 	}
 	
 	public void statistikMark() {
@@ -109,7 +109,7 @@ public class StudentDatabase {
 			}
 		} 
 		avg = sum / number;
-		System.out.println(avg);
+		System.out.println("Durchschnittliche Note: " + avg);
 	}
 	
 }

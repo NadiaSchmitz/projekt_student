@@ -143,14 +143,15 @@ public class Main {
 			}
 		}
 		
-		System.out.println("Datenbank aus Klasse StudenDatabase + neue Studenten - gelöschte Studenten");
-		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer");
+		System.out.println("Datenbank aus Klasse StudenDatabase + neue Studenten - gelöschte Studenten + Alter + Note");
+		System.out.printf("%-15s %-10s", "Name", "Matrikelnummer", "Alter", "Note");
 		System.out.println();
 		
 		for (i = 0; i < my_database.getStudentsList().length; i++) {
 			my_database.getStudentsList()[i].printMe(my_database.getStudentsList()[i].getName(), my_database.getStudentsList()[i].getMatrikelnummer(), my_database.getStudentsList()[i].getAge(), my_database.getStudentsList()[i].getMark());
 		}
 		
+		System.out.println();
 		my_database.statistikAge();
 		my_database.statistikMark();
 		
